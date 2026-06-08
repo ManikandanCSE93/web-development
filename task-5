@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: black;
+       }
+       div{
+            background-color:bisque;
+            border: radius 2px;;
+            border: 5px solid;
+            border-color: blueviolet;
+        }
+        .a
+        {
+            border:5px solid ;
+            border-radius:2px;
+            border-color: aqua;
+        }
+        #a
+        {
+            border: 5px solid;
+            border-radius: 2px;
+            border-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <h1>what is this</h1> 
+       <h5>Would you like me to make it motivational, funny, romantic, or professional depending on your use case?</h5>
+    </div>
+    <div class="a">
+ <h1> how does  this works</h1>
+ <h5> <p>Here’s a short 4–5 line text you can use:
+
+**"Life is a journey, not a race.  
+Every step teaches us something new.  
+Challenges shape us, victories inspire us.  
+Keep moving forward with hope in your heart.  
+The best is yet to come." <br> <br>
+
+Do you want me to make more versions—like one that’s funny,<br> romantic, or professional—so you can pick the vibe you like?
+</p></h5>
+    </div>
+    <div id="a">
+<h1> but why</h1>
+<img src="oip.jpg" width="100px" height="100px" alt="">
+    </div>
+</body>
+</html>
