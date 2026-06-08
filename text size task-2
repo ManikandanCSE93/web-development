@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mark.css">
+    <style>
+        
+    .a
+    {
+        color:green ;
+    }
+    .b
+    {
+        color: brown;
+    }
+    .c
+    {
+        color: blue;
+    }
+    .d
+    {
+        color: blueviolet;
+    }
+    #e
+    {
+        color: aqua;
+    }
+#f
+{
+    color:gold;
+}
+    </style>
+</head>
+<body>
+    <h1> example of headding</h1>
+    <h2>example of headding</h2>
+    <h3>example of headding</h3>
+    <h4>example of headding</h4>
+    <h5>example of headding</h5>
+    <h6>example of headding</h6>
+     <h1 class="a">heading used with font bold,italic,undeline</h1>
+     <h2 class="b">heading used with font bold,italic,undeline</h2>
+     <h3 class="c">heading used with font bold,italic,undeline</h3>
+     <h4 class="d">heading used with font bold,italic,undeline</h4>
+     <h5 id="e">heading used with font bold,italic,undeline</h5>
+     <h6 id="f">heading used with font bold,italic,undeline</h6>
+
+</body>
+</html>
