@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="OIP. html.jpg">
+    <style>
+        img
+        {
+    
+          marginleft: 100px; 
+        }
+    </style>
+      
+</head>
+<body>
+    
+<h1>welcome to my web page! </h1>
+<h2>Here’s a neat 4–5 line paragraph you can use as a welcome message for your web page:
+
+Welcome to my web page! I’m delighted to have you here and share my ideas, projects, and passions with you. This space is designed to give you a glimpse into my world, whether it’s through my work, hobbies, or stories. Feel free to explore, connect, and enjoy the content I’ve created. Thank you for visiting — I hope your time here is inspiring and enjoyable! <br>  <br>
+
+Would you like me to make this more formal and professional (like for a portfolio or business site), or keep it casual and friendly (like for a personal blog)?
+<br>  <br>   <br>   <br>
+look: <a href="https://in.search.yahoo.com/?fr2=inr">yahoo!</a> <br> <br>
+another link: <a href="https://www.instagram.com/#">innstagram</a>
+<br> <br>
+
+</h2>
+</body>
+</html>
