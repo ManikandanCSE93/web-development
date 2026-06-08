@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer Work Details</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #263238;
+    }
+    #back-button {
+      margin-bottom: 20px;
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <button id="back-button" onclick="goBack()">← Back to Customer List</button>
+
+  <h1>Customer Work Details</h1>
+  <div id="customer-info"></div>
+  <table id="work-table" style="width:100%; border-collapse: collapse;" border="1">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>In Time</th>
+        <th>Out Time</th>
+        <th>Type</th>
+        <th>Hours</th>
+        <th>Amount</th>
+        <th>Paid</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody id="work-tbody">
+      <!-- Filled by JS -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="7" style="text-align:right;"><strong>Total Balance</strong></td>
+        <td id="total-balance">₹0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script>
+    function goBack() {
+      // Navigate to the index with hash to open view-customers tab
+      window.location.href = 'index.html#view-customers';
+    }
+
+    // Helper function to get query parameters
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    function loadCustomerDetails(username) {
+      const users = JSON.parse(localStorage.getItem('tractor_users')) || [];
+      const user = users.find(u => u.username === username);
+      if (!user) {
+        document.getElementById('customer-info').innerText = 'Customer not found.';
+        return;
+      }
+
+      const workEntries = JSON.parse(localStorage.getItem('work_entries')) || [];
+      const customerWorks = workEntries.filter(e => e.username === username);
+
+      document.getElementById('customer-info').innerHTML = `
+        <h2>${user.name} (Username: ${user.username})</h2>
+        <p>Total Work Entries: ${customerWorks.length}</p>
+      `;
+
+      let tbody = document.getElementById('work-tbody');
+      tbody.innerHTML = '';
+
+      let totalBalance = 0;
+
+      customerWorks.forEach(entry => {
+        const balance = entry.amount - entry.paid;
+        totalBalance += balance;
+
+        tbody.innerHTML += `
+          <tr>
+            <td>${entry.date}</td>
+            <td>${entry.intime}</td>
+            <td>${entry.outtime}</td>
+            <td>${entry.cultivator}</td>
+            <td>${entry.totalHours.toFixed(2)}</td>
+            <td>₹${entry.amount.toFixed(2)}</td>
+            <td>₹${entry.paid.toFixed(2)}</td>
+            <td>₹${balance.toFixed(2)}</td>
+          </tr>
+        `;
+      });
+
+      document.getElementById('total-balance').innerText = `₹${totalBalance.toFixed(2)}`;
+    }
+
+    // On load
+    const username = getQueryParam('username');
+    if (!username) {
+      document.getElementById('customer-info').innerText = 'No customer specified.';
+    } else {
+      loadCustomerDetails(username);
+    }
+  </script>
+</body>
+</html>
