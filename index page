@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tractor Rental Service</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="role-selection">
+    <h1>Tractor Rental Service</h1>
+    <button onclick="selectRole('owner')">Tractor Owner</button>
+    <button onclick="selectRole('customer')">Customer</button>
+  </div>
+
+  <!-- Owner Section -->
+  <div id="owner-section" class="hidden">
+    <h2>Tractor Owner Panel</h2>
+    <button onclick="showOwnerTab('create-account')">Create Customer Account</button>
+    <button onclick="showOwnerTab('log-work')">Enter Work Details</button>
+    <button onclick="showOwnerTab('update-payment')">Update Customer Payment</button>
+    <button onclick="showOwnerTab('view-customers')">View Customer Details</button>
+    <div id="owner-panel-content"></div>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <!-- Customer Section -->
+  <div id="customer-section" class="hidden">
+    <h2>Customer Login</h2>
+    <form id="customer-login-form">
+      <input type="text" id="customer-username" placeholder="Username" required /><br />
+      <input type="password" id="customer-password" placeholder="Password" required /><br />
+      <button type="submit">Login</button>
+    </form>
+    <div id="customer-dashboard" class="hidden">
+      <h2>Your Work Details</h2>
+      <table id="work-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Intime</th>
+            <th>Outtime</th>
+            <th>Type</th>
+            <th>Total Hours</th>
+            <th>Amount</th>
+            <th>Paid</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody><!-- populated by JS --></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="7" style="text-align:right;"><strong>Total</strong></td>
+            <td id="total-balance">₹0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <div id="customer-login-error" class="error"></div>
+  </div>
+
+  <script src="app.js"></script>
+
+  <script>
+    // On page load, detect if hash is #view-customers to open that tab directly
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.location.hash === '#view-customers') {
+        document.getElementById('role-selection').classList.add('hidden');
+        document.getElementById('owner-section').classList.remove('hidden');
+        showOwnerTab('view-customers');
+      }
+    });
+  </script>
+</body>
+</html>>
