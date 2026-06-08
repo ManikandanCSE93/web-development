@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    color: #263238;
+}
+
+button {
+    margin: 8px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #388e3c;
+}
+
+.hidden {
+    display: none;
+}
+
+#error,
+.error {
+    color: red;
+    margin-top: 8px;
+}
+
+input,
+select {
+    margin: 6px 0;
+    padding: 6px;
+    font-size: 1rem;
+}
+
+#work-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+#work-table th,
+#work-table td {
+    border: 1px solid #bdbdbd;
+    padding: 6px;
+    text-align: center;
+}
