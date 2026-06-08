@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Style>
+        h1
+        {
+            color: deepskyblue;
+        }
+        #d 
+        {
+            color: rgb(250, 5, 46);
+        }
+        .s 
+        {
+            color: brown;
+        }
+        h2,h3
+        {
+            color: coral;
+        }
+    </Style>
+</head>
+<body>
+  <!-- <h1>Java</h1>
+   <p>In the current IPL season, Dhoni has not played even a single game due to a calf injury. He didn't even travel to New Delhi for the game with the Delhi Capitals on Tuesday, May 5, as he is continuing his rehabilitation in Chennai.</p> 
+   <pre>In the current IPL season, Dhoni has not played <br>even a single game due to a calf injury. </br>He didn't even travel to New Delhi for the game with the Delhi Capitals on Tuesday, May 5,<Hr> as he is continuing his rehabilitation in Chennai.</hr></pre>
+ <a href="https://www.figma.com/">figma</a>
+ <img src="clouds-cloudy-countryside-236047.jpg" width="500px" height="500px" alt="pic">
+ <h1 style="color: blueviolet;background-color: aquamarine;width:80px ; border:3px solid red;"> Mani </h1>
+ <h1> <B>Lorem ipsum dolor, sit amet consectetur adipisicing elit</B> . <i>Aliquam, cupiditate maiores cumque nam perferendis illum earum repellat deleniti numquam ab</i>, <u>accusantium perspiciatis hic minus! Quod veniam libero tempore temporibus numquam.</u> <small> ipsum dolor sit amet consectetur adipisicing elit</small>. <mark>Animi earum ratione, corrupti soluta veniam quos necessitatibus ipsa aspernatur.</mark> <del>Voluptatum hic ea ipsam esse explicabo eos veritatis odit placeat laborum aspernatur!</del> </h1>
+ <h2><q>Lorem ipsum dolor sit amet consectetur, adipisicing elit</q>. </h2>
+ <abbr title="world wide web">www</abbr>
+ <bdo dir="rtl">monk</bdo>
+ <address>dog</address>-->
+ <h1 id="d" class="s">john</h1>
+ <h1 id="d" class="s">mathive</h1>
+ <h1 id="d" class="s">john</h1>
+<H2 id="d" class="s">surya</H2>
+<h3 class="s" >ram</h3>
+</body>
+</html>
