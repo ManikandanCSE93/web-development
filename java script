@@ -1,0 +1,113 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a=10
+    a++
+    document.write(a+"<br>")
+    ++a
+     document.write((a++)+"<br>")
+      document.write((++a)+"<br>")
+       document.write(a+"<br>")
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let b=10
+        let c= b++ %2
+         document.write(b+"<br>")
+          document.write(c+"<br>")
+    </script>
+</body>
+</html> --> 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=10
+        let y= x++ + ++x
+         document.write(x+"<br>")
+          document.write(y+"<br>")
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let a=10,b=20,c=5,d=40
+    document.write((a>b && a>c && a>d ) + "<br>")
+     document.write( (b>a && b>c && b>d) +"<br>")
+      document.write((c>a && c>b && c>d) +"<br>")
+      document.write((d>a && d>b && d>c) +"<br>")
+   </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=17 y=14
+        document.write(x%10==7 && +"<br>")
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a= parseInt(prompt("enter the value"))
+    if(a!=0)
+    {
+        if(a>0)
+    {
+document.write(it is positive +"<br>")
+    }
+        else
+       
+    {
+        
+      document.write(it is negative +"<br>")
+    }
+       else
+    
+    {
+document.write(it is zero +"<br>")
+    }
+    }
+    </script>
+</body>
+</html>
